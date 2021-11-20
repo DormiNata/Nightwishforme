@@ -1,0 +1,33 @@
+sidebar {
+	display: block;
+	position: fixed;
+	width: 310px;
+	left: 20px;
+	top: 20px;
+	padding: 30px;
+	box-sizing: border-box;
+	opacity: .1;
+	transition: opacity 1.4s ease;
+}
+sidebar:hover {
+	opacity: 1;
+	transition: opacity .3s ease;
+
+}
+sidebar ul {
+	width: 100%;
+}
+sidebar li {
+	list-style-type: none;
+	font-size: 16px;
+	line-height: 24px;
+}
+sidebar a {
+	text-decoration: none;
+}
+sidebar ul > ul li {
+	color: rgba(0, 0, 0, .6);
+	font-size: 14px;
+	width: 80%;
+	padding-left: 30px;
+}

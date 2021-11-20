@@ -5,16 +5,17 @@ body {
         padding-top: 80px;
         padding-bottom: 160px;
         color: rgba(0, 0, 0, .9);
+        width: 860px;
+        margin: 0 auto;
       }
       a {
         color: inherit;
         /*color: blue;*/
       }
-      h1, h2, h3, h4, p, ul, blockquote {
-        /*font-family: 'Montserrat';*/
+      /*h1, h2, h3, h4, p, ul, blockquote {
         width: 860px;
         margin: 0 auto;
-      }
+      }*/
       img {
         width: 860px;
         margin: 56px auto;
@@ -22,7 +23,6 @@ body {
       }
       h1 {
         font-size: 56px;
-        /*font-family: 'Montserrat';*/
         font-weight: bold;
         line-height: 28px;
         margin: 56px auto;
@@ -62,16 +62,49 @@ body {
         margin-bottom: 16px;
         line-height: 28px;
       }
+      /*blockquote {
+        border-left: 3px solid black;
+        font-style: italic;
+        line-height: 32px;
+        padding-left: 17px;
+        padding-right: 20px;
+      }*/
       blockquote {
         font-style: italic;
         line-height: 32px;
+        position: relative;
+        left: 24px;
       }
+      blockquote::before {
+        content: '';
+        background: rgba(0, 0, 0, .9);
+        width: 3px;
+        height: 100%;
+        display: block;
+        position: absolute;
+        left: -24px;
+      }
+
       h1 + p + p {
         color: rgba(0, 0, 0, .5);
       }
       h1 + p {
         color: rgba(0, 0, 0, .5);
       }
+      ul li {
+        list-style-type: circle;
+        padding-left: 8px;
+        /*width: 100%;*/
+        margin-left: 20px;
+      }
+
+      /*.image {
+        display: block;
+        width: 200px;
+        height: 200px;
+        background: url('../images/Nightwish.jpg');
+        background-size: 100% auto;
+      }*/
 
 
       /*h1 {
