@@ -2,6 +2,12 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="Статья Nightwish">
+    <meta property="og:type" content="article">
+    <<!-- meta property="og:url" content="{page_url}"> -->
+    <meta property="og:title" content="Nightwish для ФБ">
+    <meta property="og:description" content="Статья Nightwish, но для ФБ">
+    <meta property="og:image" content="https://dorminata.github.io/Nightwishforme/images/nightwish.jpg">
     <title>Nightwish</title>
     
     <!--<script type="text/javascript" src="javascripts/jquery-3.6.0.js"></script>-->
@@ -22,14 +28,23 @@
       });
     });
     </script>
-
-
-    <!-- <link rel="stylesheet" type="text/css" href=""> -->
+   <!--  <script type="text/javascript">
+    $(function() {
+      $('nav a').each(function() {
+        $(this).on('click', function(e) {
+          e.preventDefault();
+          var scrollTo = $(this).attr('href');
+          var whitespace = scrollTo == '#s1' ? 70 : 30;
+          $('html,body').animate({
+            scrollTop: $(scrollTo).offset().top - whitespace
+          }, 1000);
+        });
+      });
+    });
+    </script> -->
   </head>
-
-
-
   <body>
+
     <!-- <div class="image">
     </div> -->
     <!-- <div class="box">
@@ -63,6 +78,13 @@
           </ul>
       </ul>
     </sidebar>
+    <nav class="menubar">
+      <a href="#"><img src="images/Nightwish_wordmark.svg"></a>
+        <span>
+          <a href="#">Статьи</a>
+          <a href="#">О проекте</a>
+        </span>
+    </nav>
 
 
       <img src="https://otvet.imgsmail.ru/download/48648716_cd55002c2a1f3d398c771500101a266b_800.jpg">
